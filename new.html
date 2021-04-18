@@ -1,0 +1,52 @@
+div 
+        {
+            width: 300px;
+            height: 250px;
+            border-radius: 10px;
+            margin: 100px auto;
+            border: 2px solid black;
+            position: relative;
+            overflow: hidden;
+            box-shadow: 0 0 15px black;
+        }
+
+        div img 
+        {
+            width: inherit;
+            height: inherit;
+            border-radius: inherit;
+            transform: translateY(0px);
+            transition: all 2s;
+        }
+
+        div:hover img 
+        {
+            transform: translateY(-50%);
+        }
+        div #wrapper
+        {
+            background-color: rgba(0, 0,0, 0.5);
+            top: -100px;
+            height: 50%;
+            transition: all 2s;
+            width: 98%;
+            border-radius: 10px;
+            text-align: justify;
+        }
+        div:hover #wrapper
+        {
+            transform: translateY(-100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div>
+        <img src="nature21.jpg">
+        <div id="wrapper">
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Tenetur explicabo facere veritatis rerum modi
+                minima vero dolore at illo temporibus.</p>
+        </div>
+    </div>
+</body>
+</html>
